@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import CVCalendar
 
-class SecondViewViewController: UIViewController {
+class SecondViewViewController: UIViewController, CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
+    func presentationMode() -> CalendarMode {
+        return.monthView
+    }
+    
+    func firstWeekday() -> Weekday {
+        return.monday
+    }
+    
+ 
+    @IBOutlet weak var menuView: CVCalendarMenuView!
+
+     @IBOutlet weak var calendarView: CVCalendarView!
+
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        menuView.commitMenuViewUpdate()
+        calendarView.commitCalendarViewUpdate()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +40,4 @@ class SecondViewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

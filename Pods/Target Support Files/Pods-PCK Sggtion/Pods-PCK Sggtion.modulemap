@@ -1,0 +1,6 @@
+framework module Pods_PCK_Sggtion {
+  umbrella header "Pods-PCK Sggtion-umbrella.h"
+
+  export *
+  module * { export * }
+}

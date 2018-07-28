@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255FCE00210BE0C500AF7350 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FCDFF210BE0C500AF7350 /* plus.png */; };
 		2594FC9D210BC8900090BB1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FC9C210BC8900090BB1F /* AppDelegate.swift */; };
 		2594FC9F210BC8900090BB1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FC9E210BC8900090BB1F /* ViewController.swift */; };
 		2594FCA2210BC8900090BB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA0210BC8900090BB1F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0A82FC13FF1AB61957005C17 /* Pods-PCK Sggtion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCK Sggtion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCK Sggtion/Pods-PCK Sggtion.debug.xcconfig"; sourceTree = "<group>"; };
+		255FCDFF210BE0C500AF7350 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = ../../plus.png; sourceTree = "<group>"; };
 		2594FC99210BC8900090BB1F /* PCK Sggtion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCK Sggtion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2594FC9C210BC8900090BB1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2594FC9E210BC8900090BB1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		2594FC9B210BC8900090BB1F /* PCK Sggtion */ = {
 			isa = PBXGroup;
 			children = (
+				255FCDFF210BE0C500AF7350 /* plus.png */,
 				2594FC9C210BC8900090BB1F /* AppDelegate.swift */,
 				2594FC9E210BC8900090BB1F /* ViewController.swift */,
 				2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */,
@@ -157,6 +160,7 @@
 				2594FCAA210BC8910090BB1F /* LaunchScreen.storyboard in Resources */,
 				2594FCA7210BC8910090BB1F /* Assets.xcassets in Resources */,
 				2594FCA2210BC8900090BB1F /* Main.storyboard in Resources */,
+				255FCE00210BE0C500AF7350 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

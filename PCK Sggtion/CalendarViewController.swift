@@ -9,9 +9,7 @@
 import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
-    
-    
-    
+  
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     @IBOutlet weak var monthlbl: UILabel!
@@ -103,15 +101,15 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell=collectionView.cellForItem(at: indexPath)
         cell?.backgroundColor = UIColor.darkGray
-        //        let lbl = cell?.subviews[1] as! UILabel
-        //        lbl.textColor=UIColor.white
+          // let lbl = cell?.subviews[1] as! UILabel
+            //  lbl.textColor=UIColor.white
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let cell=collectionView.cellForItem(at: indexPath)
         cell?.backgroundColor=UIColor.clear
-        //        let lbl = cell?.subviews[1] as! UILabel
-        //        lbl.textColor = UIColor.blue
+            //  let lbl = cell?.subviews[1] as! UILabel
+             //  lbl.textColor = UIColor.blue
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

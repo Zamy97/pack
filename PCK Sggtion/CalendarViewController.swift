@@ -28,6 +28,11 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        calendarView.allowsMultipleSelection  = true
+//        calendarView.rangeSelectionWillBeUsed = true
+//        
+        
         currentMonthIndex = Calendar.current.component(.month, from: Date())
         currentYear = Calendar.current.component(.year, from: Date())
         todaysDate = Calendar.current.component(.day, from: Date())
@@ -99,6 +104,9 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        
         let cell=collectionView.cellForItem(at: indexPath)
         cell?.backgroundColor = UIColor.darkGray
           // let lbl = cell?.subviews[1] as! UILabel

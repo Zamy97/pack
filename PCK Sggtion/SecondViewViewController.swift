@@ -28,28 +28,22 @@ class SecondViewViewController: UIViewController {
         
         view.addGestureRecognizer(tapGesture)
         
-        inputTextField.inputView = datePicker
-        
-    }
+        inputTextField.inputView = datePicker  }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         
-        view.endEditing(true)
-        
-    }
-    
-    
+        view.endEditing(true)    }
     @objc func dateChanged(datePicker: UIDatePicker) {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         
         inputTextField.text = dateFormatter.string(from: datePicker.date)
-       
-        
-        
-        
+     
     }
+    
+    
+    
     
     
 

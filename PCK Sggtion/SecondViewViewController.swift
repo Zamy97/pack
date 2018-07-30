@@ -8,36 +8,49 @@
 
 import UIKit
 import CVCalendar
+import GooglePlaces
+import GoogleMaps
 
-class SecondViewViewController: UIViewController, CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
-    func presentationMode() -> CalendarMode {
-        return.monthView
-    }
+class SecondViewViewController: UIViewController {
     
-    func firstWeekday() -> Weekday {
-        return.monday
-    }
+    @IBOutlet weak var inputTextField: UITextField!
     
- 
-    @IBOutlet weak var menuView: CVCalendarMenuView!
-
-     @IBOutlet weak var calendarView: CVCalendarView!
-
-    
-    
+     private var datePicker = UIDatePicker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        menuView.commitMenuViewUpdate()
-        calendarView.commitCalendarViewUpdate()
         
+      datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(SecondViewViewController.dateChanged(datePicker:)), for: .valueChanged)
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SecondViewViewController.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
+        
+        inputTextField.inputView = datePicker
+        
     }
     
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        
+        view.endEditing(true)
+        
+    }
+    
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        inputTextField.text = dateFormatter.string(from: datePicker.date)
+       
+        
+        
+        
+    }
+    
+    
+
 }

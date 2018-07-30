@@ -58,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="860" y="132.68365817091455"/>
         </scene>
-        <!--Calendar Appearance Delegate-->
+        <!--Second View View Controller-->
         <scene sceneID="eHP-if-XMM">
             <objects>
                 <viewController id="rz2-FH-x4r" customClass="SecondViewViewController" customModule="PCK_Sggtion" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,14 +73,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-nO-cLY">
-                                <rect key="frame" x="16" y="111" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When do you want to go?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGF-R1-0TO">
                                 <rect key="frame" x="16" y="158" width="343" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -88,45 +80,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-cy-7t0" customClass="CVCalendarMenuView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="194" width="375" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.69590658530301441" blue="0.91368123903252951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <outlet property="menuViewDelegate" destination="rz2-FH-x4r" id="NxA-yu-49Y"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-LM-rDj" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="254" width="375" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.65629116348341854" green="0.77715268161534146" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <outlet property="calendarAppearanceDelegate" destination="rz2-FH-x4r" id="TWH-a1-QgS"/>
-                                    <outlet property="calendarDelegate" destination="rz2-FH-x4r" id="P9i-kC-vld"/>
-                                </connections>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uY-OC-eJi">
-                                <rect key="frame" x="164" y="536" width="46" height="54"/>
+                                <rect key="frame" x="329" y="65" width="46" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="uBV-a4-KN1" kind="show" id="7P5-iw-Igw"/>
+                                    <segue destination="Xg9-1p-vlb" kind="show" id="B3V-Q3-Htn"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EfD-b6-Fil">
+                                <rect key="frame" x="16" y="112" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ba-pK-Dxb">
+                                <rect key="frame" x="16" y="194" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.3927151679" green="0.94272579069999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wQA-kV-CAe"/>
                     </view>
                     <connections>
-                        <outlet property="calendarView" destination="Z98-LM-rDj" id="drA-L6-nCf"/>
-                        <outlet property="menuView" destination="DcF-cy-7t0" id="JVr-cr-cBp"/>
+                        <outlet property="inputTextField" destination="5ba-pK-Dxb" id="b0G-16-Fwb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yw6-J3-Mwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="132.68365817091455"/>
         </scene>
-        <!--Item-->
+        <!--Calendar View Controller-->
         <scene sceneID="Ivn-11-Nnk">
             <objects>
                 <viewController id="Xg9-1p-vlb" customClass="CalendarViewController" customModule="PCK_Sggtion" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,7 +155,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.9418445849" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A99-fi-q8w">
-                                <rect key="frame" x="0.0" y="126" width="375" height="282"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.090589528030000005" green="0.54750834479999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FUh-tX-wi3">
@@ -179,10 +167,10 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="at8-Se-3LY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oec-tt-j8d"/>
+                    <navigationItem key="navigationItem" id="Tkc-ui-nb7"/>
                     <connections>
                         <outlet property="monthlbl" destination="6n9-dv-on2" id="YyB-rx-hPF"/>
                         <outlet property="myCollectionView" destination="A99-fi-q8w" id="QFM-oQ-YhT"/>
@@ -190,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="777-k6-RRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3416.8000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="3789.5999999999999" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EEr-7c-cWe">
@@ -210,25 +198,30 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="wda-WB-QpG">
+        <!--Item-->
+        <scene sceneID="sCa-57-JNu">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uBV-a4-KN1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WSp-de-QKJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="oec-tt-j8d"/>
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ZR-Jd-x3D">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wz0-nV-K2E">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Xg9-1p-vlb" kind="relationship" relationship="viewControllers" id="G8N-0k-J2I"/>
+                        <segue destination="Xg9-1p-vlb" kind="relationship" relationship="rootViewController" id="Bcw-C2-MwL"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tXD-cC-LE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJf-hF-4tK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2477.5999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2848.8000000000002" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
         <image name="plus.png" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B3V-Q3-Htn"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,11 @@
 import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var inputTextField: UITextField!
+    
+   
+    
   
     @IBOutlet weak var myCollectionView: UICollectionView!
     
@@ -24,14 +29,10 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
     var todaysDate = 0
     var firstWeekDayOfMonth = 0
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        calendarView.allowsMultipleSelection  = true
-//        calendarView.rangeSelectionWillBeUsed = true
-//        
+        
         
         currentMonthIndex = Calendar.current.component(.month, from: Date())
         currentYear = Calendar.current.component(.year, from: Date())
@@ -46,6 +47,11 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
         //
         self.myCollectionView.register(UINib(nibName:"DateCell", bundle: nil), forCellWithReuseIdentifier: "DateCell")
     }
+    
+   
+    
+    
+    
     
     @IBAction func prevbtn(_ sender: UIButton) {
         currentMonthIndex -= 1
@@ -139,6 +145,8 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
         let day = ("\(currentYear)-\(currentMonthIndex)-01".date?.firstDayOfTheMonth.weekday)!
         return day == 7 ? 1 : day
     }
+    
+    
     
     
     

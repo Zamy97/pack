@@ -9,7 +9,12 @@ target 'PCK Sggtion' do
 
 pod 'CVCalendar', '~> 1.6.1'
 pod 'SwiftyJSON', '~> 4.0'
- pod 'Alamofire', '~> 4.7'
+pod 'Alamofire', '~> 4.7'
+
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
+pod 'GoogleMaps'
+
 
 
 end

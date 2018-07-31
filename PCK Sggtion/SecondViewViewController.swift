@@ -71,11 +71,12 @@ class SecondViewViewController: UIViewController {
     @objc func dateChanged(datePicker: UIDatePicker) {
         
         
-        dateFormatter1.dateFormat = String("MM-dd-yyyy")
-        dateFormatter2.dateFormat = String("MM-dd-yyyy")
+        dateFormatter1.dateFormat = "dd  MMMM  yyyy"
+        dateFormatter2.dateFormat = "dd  MMMM  yyyy"
         
-        inputTextField.text = String(dateFormatter1.string(from: datePicker1.date))
-        outputTextField.text = String(dateFormatter2.string(from: datePicker2.date))
+    
+        inputTextField.text = dateFormatter1.string(from: datePicker1.date)
+        outputTextField.text = dateFormatter2.string(from: datePicker2.date)
    
     }
     
@@ -90,8 +91,6 @@ class SecondViewViewController: UIViewController {
         }
        
     }
-    
-  
 
 }
 
@@ -114,15 +113,9 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     
     // MARK: GOOGLE AUTO COMPLETE DELEGATE
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-   //     let lat = place.coordinate.latitude
-      //  let long = place.coordinate.longitude
+     txtFieldSearch.text=place.formattedAddress
         
-        txtFieldSearch.text=place.formattedAddress
-        
-        //  chosenPlace = MyPlace(name: place.formattedAddress!, lat: lat, long: long)
-        
-        
-        self.dismiss(animated: true, completion: nil) // dismiss after place selected
+    self.dismiss(animated: true, completion: nil) // dismiss after place selected
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
@@ -145,7 +138,7 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     
     func setupTextField(textField: UITextField, img: UIImage){
         textField.leftViewMode = UITextFieldViewMode.always
-        let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: 20, height: 20))
+        let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: 23, height: 23))
         imageView.image = img
         let paddingView = UIView(frame:CGRect(x: 0, y: 0, width: 30, height: 30))
         paddingView.addSubview(imageView)
@@ -156,8 +149,8 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
         
         self.view.addSubview(txtFieldSearch)
         txtFieldSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive=true
-        txtFieldSearch.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive=true
-        txtFieldSearch.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive=true
+        txtFieldSearch.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive=true
+        txtFieldSearch.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive=true
         txtFieldSearch.heightAnchor.constraint(equalToConstant: 35).isActive=true
         setupTextField(textField: txtFieldSearch, img: #imageLiteral(resourceName: "map_Pin"))
     }

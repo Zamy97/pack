@@ -10,16 +10,9 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-//struct MyPlace {
-//    var name: String
-//    var lat: Double
-//    var long: Double
-//}
-
 class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate, UITextFieldDelegate {
     
     var locationManager = CLLocationManager()
-    //    var chosenPlace: MyPlace?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,10 +71,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.delegate = nil
         locationManager.stopUpdatingLocation()
-      //   let location = locations.last
-        //        let lat = (location?.coordinate.latitude)!
-        //        let long = (location?.coordinate.longitude)!
-        
     }
     
     func setupTextField(textField: UITextField, img: UIImage){

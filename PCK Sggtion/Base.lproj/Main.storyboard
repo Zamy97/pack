@@ -115,6 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="5ba-pK-Dxb" id="b0G-16-Fwb"/>
+                        <outlet property="outputTextField" destination="sBL-2c-8Op" id="jZE-Pt-bk4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yw6-J3-Mwg" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -22,7 +22,7 @@ class SecondViewViewController: UIViewController {
 //        refreshDate()
 //    }
     
-//    
+//
 //    @IBAction func untilTextFieldChanged(_ sender: UITextField) {
 //        refreshDate()
 //    }
@@ -177,10 +177,6 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     }
  
 }
-
-
-
-
 
 
 

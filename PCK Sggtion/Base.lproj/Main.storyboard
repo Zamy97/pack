@@ -94,19 +94,33 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="untilTextFieldChanged:" destination="rz2-FH-x4r" eventType="editingChanged" id="Poq-4l-Gfh"/>
+                                </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnK-8q-mK1">
+                                <rect key="frame" x="16" y="362" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ba-pK-Dxb">
                                 <rect key="frame" x="0.0" y="194" width="359" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="fromTextFieldChanged:" destination="rz2-FH-x4r" eventType="editingChanged" id="RgX-27-nBI"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.3927151679" green="0.94272579069999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wQA-kV-CAe"/>
                     </view>
                     <connections>
+                        <outlet property="finalLabel" destination="ZnK-8q-mK1" id="2mU-b8-iBk"/>
                         <outlet property="inputTextField" destination="5ba-pK-Dxb" id="b0G-16-Fwb"/>
                         <outlet property="outputTextField" destination="sBL-2c-8Op" id="jZE-Pt-bk4"/>
                     </connections>

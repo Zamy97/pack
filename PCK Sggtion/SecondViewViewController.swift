@@ -179,8 +179,6 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
  
 }
 
-
-
 extension Date {
    
     /// Returns the amount of days from another date

@@ -124,11 +124,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd0-nn-GEC">
-                                <rect key="frame" x="164" y="526" width="46" height="30"/>
+                                <rect key="frame" x="164" y="526" width="46" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="TuC-Kx-K9Y" kind="show" id="t3N-tA-WIm"/>
+                                    <segue destination="qHC-hc-wLE" kind="show" id="THp-yd-7jh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -302,24 +302,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJf-hF-4tK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2848.8000000000002" y="132.68365817091455"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6x8-5u-Phe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TuC-Kx-K9Y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="704-wH-620">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="qHC-hc-wLE" kind="relationship" relationship="rootViewController" id="OJ1-N4-Tqk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vJK-us-Wbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1716" y="969.26536731634189"/>
         </scene>
     </scenes>
     <resources>

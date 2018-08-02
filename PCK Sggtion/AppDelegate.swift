@@ -26,16 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyD5IZEjQJqSyBp53ThulVI4Zmo4Rv_GrX4")
         GMSPlacesClient.provideAPIKey("AIzaSyD5IZEjQJqSyBp53ThulVI4Zmo4Rv_GrX4")
         
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        if let window = self.window {
-//            window.backgroundColor = UIColor.white
-//
-//           // let nav = UINavigationController()
-//            let mainView = ViewController()
-//            nav.viewControllers = [mainView]
-//            window.rootViewController = nav
-//            window.makeKeyAndVisible()
-//        }
+
         
     
         return true

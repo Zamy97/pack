@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.24669077274785856" green="0.78186788997679368" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.14851078273846174" green="0.47158297504690116" blue="0.60840349740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="a6J-ev-xlU"/>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.3927151679" green="0.94272579069999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.42806832901554404" green="0.36297925737200842" blue="0.21499528732676454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wQA-kV-CAe"/>
                     </view>
                     <connections>
@@ -237,19 +237,19 @@
                                             <rect key="frame" x="16" y="26" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="0.16947002771432973" blue="0.05516614765439265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" red="0.12426138865125985" green="0.3098486075129534" blue="0.090386320852761701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kXQ-UY-tvr">
                                             <rect key="frame" x="16" y="49.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="1" green="0.16947002771432973" blue="0.05516614765439265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" red="0.4237370466321243" green="0.22507011355951392" blue="0.13230245871976637" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.45117635715696369" green="0.5162629493303027" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.18110014673685315" green="0.77997722045670759" blue="0.80310880829015541" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -264,7 +264,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-DQ-hHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655.1999999999998" y="969.26536731634189"/>
+            <point key="canvasLocation" x="1716" y="1001"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EEr-7c-cWe">

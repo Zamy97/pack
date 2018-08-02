@@ -123,6 +123,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd0-nn-GEC">
+                                <rect key="frame" x="164" y="526" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="TuC-Kx-K9Y" kind="show" id="t3N-tA-WIm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3927151679" green="0.94272579069999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wQA-kV-CAe"/>
@@ -204,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="3789.5999999999999" y="132.68365817091455"/>
         </scene>
-        <!--Weather of your destination-->
+        <!--Weather View Table View Controller-->
         <scene sceneID="mtY-pF-lwb">
             <objects>
-                <tableViewController id="qHC-hc-wLE" customClass="WeatherTableViewController" customModule="PCK_Sggtion" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="qHC-hc-wLE" customClass="WeatherViewTableViewController" customModule="PCK_Sggtion" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="evr-ek-L20">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +257,10 @@
                             <outlet property="delegate" destination="qHC-hc-wLE" id="9hf-xW-n3e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Weather of your destination" id="5vu-GH-jeL"/>
+                    <navigationItem key="navigationItem" id="5vu-GH-jeL"/>
+                    <connections>
+                        <outlet property="searchBar" destination="DB6-bx-gNM" id="PzA-en-weW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-DQ-hHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,6 +326,6 @@
         <image name="plus.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bcw-C2-MwL"/>
+        <segue reference="B3V-Q3-Htn"/>
     </inferredMetricsTieBreakers>
 </document>

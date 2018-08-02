@@ -1,5 +1,5 @@
 //
-//  WeatherTableViewController.swift
+//  WeatherViewTableViewController.swift
 //  PCK Sggtion
 //
 //  Created by Akhtar zaman on 8/2/18.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class WeatherTableViewController: UITableViewController {
-
+class WeatherViewTableViewController: UITableViewController {
+    
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

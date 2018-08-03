@@ -13,6 +13,8 @@ import GoogleMaps
 
 class SecondViewViewController: UIViewController {
     
+     var forecastData = [Weather]()
+    
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputTextField: UITextField!
     
@@ -20,6 +22,7 @@ class SecondViewViewController: UIViewController {
     
     @IBOutlet weak var locationPrintLabel: UILabel!
     
+ 
     private var datePicker1 = UIDatePicker()
     private var datePicker2 = UIDatePicker()
 
@@ -71,6 +74,17 @@ class SecondViewViewController: UIViewController {
   
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "weatherSegue":
+            let destination = segue.destination as? WeatherViewTableViewController
+            destination?.location = locationPrintLabel.text!
+      
+        default:
+            break
+        }
+    }
+    
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
      view.endEditing(true)
         
@@ -104,8 +118,6 @@ class SecondViewViewController: UIViewController {
         }
        
     }
-    
-    
 
 }
 
@@ -129,10 +141,13 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     // MARK: GOOGLE AUTO COMPLETE DELEGATE
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
      txtFieldSearch.text = place.formattedAddress
+        
+        // Next line print the location using google places
         locationPrintLabel.text = place.formattedAddress
         
         
-    self.dismiss(animated: true, completion: nil) // dismiss after place selected
+        // dismiss after place selected
+    self.dismiss(animated: true, completion: nil)
         
         
     }
@@ -172,11 +187,10 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
         txtFieldSearch.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive=true
         txtFieldSearch.heightAnchor.constraint(equalToConstant: 35).isActive=true
         setupTextField(textField: txtFieldSearch, img: #imageLiteral(resourceName: "map_Pin"))
-        
-        
+    
     }
-   
- 
+    
+
 }
 
 extension Date {
@@ -185,8 +199,11 @@ extension Date {
     func days(from date: Date) -> Int {
         return Calendar.current.dateComponents([.day], from: date, to: self).day ?? 0
     }
-
+ 
+    
 }
+
+
 
 
 

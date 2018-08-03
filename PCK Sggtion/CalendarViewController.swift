@@ -11,10 +11,7 @@ import UIKit
 class CalendarViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var inputTextField: UITextField!
-    
-   
-    
-  
+ 
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     @IBOutlet weak var monthlbl: UILabel!

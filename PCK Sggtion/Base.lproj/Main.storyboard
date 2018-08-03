@@ -128,11 +128,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="qHC-hc-wLE" kind="show" id="THp-yd-7jh"/>
+                                    <segue destination="qHC-hc-wLE" kind="show" identifier="weatherSegue" id="THp-yd-7jh"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.42806832901554404" green="0.36297925737200842" blue="0.21499528732676454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.42806832901554404" green="0.2052097470423617" blue="0.35791224982531689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wQA-kV-CAe"/>
                     </view>
                     <connections>
@@ -220,14 +220,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.9418445849" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="San Francisco" id="DB6-bx-gNM">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="GX5-ov-7ay" detailTextLabel="kXQ-UY-tvr" rowHeight="93" style="IBUITableViewCellStyleSubtitle" id="aNg-lz-WfA">
-                                <rect key="frame" x="0.0" y="72" width="375" height="93"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aNg-lz-WfA" id="DM1-IC-frQ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
@@ -258,9 +253,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="5vu-GH-jeL"/>
-                    <connections>
-                        <outlet property="searchBar" destination="DB6-bx-gNM" id="PzA-en-weW"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-DQ-hHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

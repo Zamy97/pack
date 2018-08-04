@@ -195,7 +195,7 @@
                                 <rect key="frame" x="16" y="435" width="343" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Let's Start Packing"/>
+                                <state key="normal" title="Let's Start Packing!"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-8W-zYy">
                                 <rect key="frame" x="16" y="141" width="80" height="103"/>

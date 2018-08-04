@@ -15,6 +15,10 @@
 		2594FCA7210BC8910090BB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA6210BC8910090BB1F /* Assets.xcassets */; };
 		2594FCAA210BC8910090BB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA8210BC8910090BB1F /* LaunchScreen.storyboard */; };
 		2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */; };
+		25B5605D21166FE3008A6F23 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */; };
+		25B5605F21166FFF008A6F23 /* gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605E21166FFF008A6F23 /* gender.swift */; };
+		25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5606121167086008A6F23 /* ClothingModelLogic.swift */; };
+		25B5606821167159008A6F23 /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5606721167159008A6F23 /* ClothesTableViewCell.swift */; };
 		25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */; };
 		25EA617B2113B891000D9108 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617A2113B891000D9108 /* Weather.swift */; };
 		25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F042A12116487900A8C4A5 /* ThirdViewController.swift */; };
@@ -36,6 +40,11 @@
 		2594FCA9210BC8910090BB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2594FCAB210BC8910090BB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
+		25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		25B5605E21166FFF008A6F23 /* gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gender.swift; sourceTree = "<group>"; };
+		25B5606121167086008A6F23 /* ClothingModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModelLogic.swift; sourceTree = "<group>"; };
+		25B560662116712D008A6F23 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		25B5606721167159008A6F23 /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
 		25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewTableViewController.swift; sourceTree = "<group>"; };
 		25EA617A2113B891000D9108 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		25F042A12116487900A8C4A5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -79,23 +88,76 @@
 		2594FC9B210BC8900090BB1F /* PCK Sggtion */ = {
 			isa = PBXGroup;
 			children = (
-				255FCDFF210BE0C500AF7350 /* plus.png */,
+				25F042A42116612000A8C4A5 /* Controllers */,
+				25B5605721166E52008A6F23 /* Services */,
+				25B5605A21166EE5008A6F23 /* Helper */,
+				25B5606021167045008A6F23 /* Model */,
+				25B5605B21166F03008A6F23 /* View */,
+				25B5606521167101008A6F23 /* UsefulCells */,
 				2594FC9C210BC8900090BB1F /* AppDelegate.swift */,
+				2594FCA6210BC8910090BB1F /* Assets.xcassets */,
+				255FCDFF210BE0C500AF7350 /* plus.png */,
+				2594FCAB210BC8910090BB1F /* Info.plist */,
+				2594FCA3210BC8900090BB1F /* PCK_Sggtion.xcdatamodeld */,
+				25FEF7B1210D571800050699 /* DateCell.xib */,
+			);
+			path = "PCK Sggtion";
+			sourceTree = "<group>";
+		};
+		25B5605721166E52008A6F23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25EA617A2113B891000D9108 /* Weather.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		25B5605A21166EE5008A6F23 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */,
+				25B5605E21166FFF008A6F23 /* gender.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		25B5605B21166F03008A6F23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2594FCA0210BC8900090BB1F /* Main.storyboard */,
+				2594FCA8210BC8910090BB1F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25B5606021167045008A6F23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25B5606121167086008A6F23 /* ClothingModelLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25B5606521167101008A6F23 /* UsefulCells */ = {
+			isa = PBXGroup;
+			children = (
+				25FEF7AF210D56AC00050699 /* DataCell.swift */,
+				25B560662116712D008A6F23 /* DateCell.xib */,
+				25B5606721167159008A6F23 /* ClothesTableViewCell.swift */,
+			);
+			path = UsefulCells;
+			sourceTree = "<group>";
+		};
+		25F042A42116612000A8C4A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				2594FC9E210BC8900090BB1F /* ViewController.swift */,
 				2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */,
 				25FEF7AB210D374A00050699 /* CalendarViewController.swift */,
-				2594FCA0210BC8900090BB1F /* Main.storyboard */,
-				2594FCA6210BC8910090BB1F /* Assets.xcassets */,
-				2594FCA8210BC8910090BB1F /* LaunchScreen.storyboard */,
-				2594FCAB210BC8910090BB1F /* Info.plist */,
-				2594FCA3210BC8900090BB1F /* PCK_Sggtion.xcdatamodeld */,
-				25FEF7AF210D56AC00050699 /* DataCell.swift */,
-				25FEF7B1210D571800050699 /* DateCell.xib */,
-				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
-				25EA617A2113B891000D9108 /* Weather.swift */,
 				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
+				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
 			);
-			path = "PCK Sggtion";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		2D169F56A045C849F465DCC8 /* Pods */ = {
@@ -256,11 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B5605D21166FE3008A6F23 /* CoreDataHelper.swift in Sources */,
 				25EA617B2113B891000D9108 /* Weather.swift in Sources */,
+				25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */,
 				25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */,
 				25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */,
 				25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */,
 				25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */,
+				25B5605F21166FFF008A6F23 /* gender.swift in Sources */,
+				25B5606821167159008A6F23 /* ClothesTableViewCell.swift in Sources */,
 				2594FC9F210BC8900090BB1F /* ViewController.swift in Sources */,
 				2594FC9D210BC8900090BB1F /* AppDelegate.swift in Sources */,
 				2594FCA5210BC8900090BB1F /* PCK_Sggtion.xcdatamodeld in Sources */,

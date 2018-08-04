@@ -142,12 +142,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource,UICol
         let day = ("\(currentYear)-\(currentMonthIndex)-01".date?.firstDayOfTheMonth.weekday)!
         return day == 7 ? 1 : day
     }
-    
-    
-    
-    
-    
-    
+  
 }
 extension Date {
     var weekday: Int {

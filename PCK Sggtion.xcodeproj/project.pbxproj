@@ -17,6 +17,7 @@
 		2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */; };
 		25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */; };
 		25EA617B2113B891000D9108 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617A2113B891000D9108 /* Weather.swift */; };
+		25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F042A12116487900A8C4A5 /* ThirdViewController.swift */; };
 		25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEF7AB210D374A00050699 /* CalendarViewController.swift */; };
 		25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEF7AF210D56AC00050699 /* DataCell.swift */; };
 		25FEF7B2210D571800050699 /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FEF7B1210D571800050699 /* DateCell.xib */; };
@@ -37,6 +38,7 @@
 		2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
 		25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewTableViewController.swift; sourceTree = "<group>"; };
 		25EA617A2113B891000D9108 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		25F042A12116487900A8C4A5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		25FEF7AB210D374A00050699 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		25FEF7AF210D56AC00050699 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		25FEF7B1210D571800050699 /* DateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateCell.xib; path = "../../Make school Projects/calendar-app-iOS-using-storyboard-master/Custom_Calender/DateCell.xib"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				25FEF7B1210D571800050699 /* DateCell.xib */,
 				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
 				25EA617A2113B891000D9108 /* Weather.swift */,
+				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 			);
 			path = "PCK Sggtion";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EA617B2113B891000D9108 /* Weather.swift in Sources */,
+				25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */,
 				25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */,
 				25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */,
 				25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */,

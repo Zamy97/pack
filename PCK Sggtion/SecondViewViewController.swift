@@ -78,7 +78,7 @@ class SecondViewViewController: UIViewController {
         switch segue.identifier {
         case "weatherSegue":
             let destination = segue.destination as? WeatherViewTableViewController
-            destination?.location = locationPrintLabel.text!
+            destination?.location = txtFieldSearch.text!
       
         default:
             break
@@ -111,14 +111,19 @@ class SecondViewViewController: UIViewController {
         if sender == inputTextField
         {
             inputTextField.text = String(dateFormatter1.string(from: sender.date))
+            
+           
         }
         if sender == outputTextField
         {
             outputTextField.text = String(dateFormatter2.string(from: sender.date))
         }
-       
+        
     }
+    
 
+
+    
 }
 
 extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate, UITextFieldDelegate {

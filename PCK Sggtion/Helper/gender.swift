@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import Foundation
+
+enum Gender {
+    case male
+    case female
+    case none
+}

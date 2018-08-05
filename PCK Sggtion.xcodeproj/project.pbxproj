@@ -15,6 +15,7 @@
 		2594FCA7210BC8910090BB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA6210BC8910090BB1F /* Assets.xcassets */; };
 		2594FCAA210BC8910090BB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA8210BC8910090BB1F /* LaunchScreen.storyboard */; };
 		2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */; };
+		2599C2FD2116B6860044DE3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599C2FC2116B6860044DE3C /* HomeViewController.swift */; };
 		25B5605D21166FE3008A6F23 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */; };
 		25B5605F21166FFF008A6F23 /* gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605E21166FFF008A6F23 /* gender.swift */; };
 		25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5606121167086008A6F23 /* ClothingModelLogic.swift */; };
@@ -40,6 +41,7 @@
 		2594FCA9210BC8910090BB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2594FCAB210BC8910090BB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
+		2599C2FC2116B6860044DE3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		25B5605E21166FFF008A6F23 /* gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gender.swift; sourceTree = "<group>"; };
 		25B5606121167086008A6F23 /* ClothingModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModelLogic.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				25FEF7AB210D374A00050699 /* CalendarViewController.swift */,
 				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
+				2599C2FC2116B6860044DE3C /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */,
 				25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */,
 				25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */,
+				2599C2FD2116B6860044DE3C /* HomeViewController.swift in Sources */,
 				25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */,
 				25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */,
 				25B5605F21166FFF008A6F23 /* gender.swift in Sources */,

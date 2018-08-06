@@ -14,6 +14,7 @@ pod 'Alamofire', '~> 4.7'
 pod 'GooglePlaces'
 pod 'GooglePlacePicker'
 pod 'GoogleMaps'
+pod 'LocationPicker'
 
 
 

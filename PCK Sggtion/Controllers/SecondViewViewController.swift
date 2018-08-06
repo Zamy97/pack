@@ -79,7 +79,8 @@ class SecondViewViewController: UIViewController {
         case "weatherSegue":
             let destination = segue.destination as? WeatherViewTableViewController
             destination?.location = txtFieldSearch.text!
-      
+        case "locationSegue":
+            WeatherService.location = locationPrintLabel.text
         default:
             break
         }

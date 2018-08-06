@@ -11,7 +11,7 @@ import CoreLocation
 
 class WeatherViewTableViewController: UITableViewController, UISearchBarDelegate {
     
- var location = ""
+    var location = ""
     
     var forecastData = [Weather]()
     

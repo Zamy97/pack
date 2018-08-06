@@ -136,7 +136,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="jzR-Mt-D45" kind="show" id="AgQ-uS-mFi"/>
+                                    <segue destination="jzR-Mt-D45" kind="show" identifier="locationSegue" id="AgQ-uS-mFi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,6 +196,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Let's Start Packing!"/>
+                                <connections>
+                                    <segue destination="vMt-jr-JC3" kind="show" id="NYu-ic-gt8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-8W-zYy">
                                 <rect key="frame" x="16" y="141" width="80" height="103"/>
@@ -328,16 +331,23 @@
             </objects>
             <point key="canvasLocation" x="2969" y="959"/>
         </scene>
-        <!--View Controller-->
+        <!--Final View Controller-->
         <scene sceneID="J47-vW-mRn">
             <objects>
-                <viewController id="vMt-jr-JC3" sceneMemberID="viewController">
+                <viewController id="vMt-jr-JC3" customClass="FinalViewController" customModule="PCK_Sggtion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ulT-e7-aA8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRs-8i-QJZ">
-                                <rect key="frame" x="16" y="72" width="343" height="56"/>
+                                <rect key="frame" x="16" y="72" width="343" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orD-h0-KDO">
+                                <rect key="frame" x="16" y="170" width="343" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -347,6 +357,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="f5T-gh-VBH"/>
                     </view>
+                    <connections>
+                        <outlet property="tempLabel" destination="orD-h0-KDO" id="7h9-89-tBb"/>
+                        <outlet property="temperatureLabel" destination="ZRs-8i-QJZ" id="zL4-t4-xvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAe-8C-Rqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,6 +408,6 @@
         <image name="plus.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bcw-C2-MwL"/>
+        <segue reference="B3V-Q3-Htn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Akhtar zaman. All rights reserved.
 //
 
-struct ClothingModelLogic{
+ struct ClothingModelLogic{
     
     static func getClothing(temp: Double, gender: Gender) -> [String]{
         
@@ -56,4 +56,4 @@ struct ClothingModelLogic{
         return ["Hello"]
         
     }
-}
+ }

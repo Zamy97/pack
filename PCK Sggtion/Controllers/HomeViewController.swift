@@ -2,22 +2,27 @@
 //  HomeViewController.swift
 //  PCK Sggtion
 //
-//  Created by Akhtar zaman on 8/4/18.
+//  Created by Akhtar zaman on 8/5/18.
 //  Copyright © 2018 Akhtar zaman. All rights reserved.
 //
 
-import UIKit
-/* class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+/* import UIKit
+
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     var longitude: Double?
     var latitude: Double?
     var clothes = [String]()
     var gender: Gender = .none
-
-    @IBOutlet weak var tableView: UITableView!
+  
+  ////  @IBOutlet weak var locationLabel: UILabel!
     
+    
+    @IBOutlet weak var tableView: UITableView!
+ 
     @IBOutlet weak var temperatureLabel: UILabel!
     
-    @IBOutlet weak var locationLabel: UILabel!
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,11 +35,11 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        guard let longitude = longitude else {return}
-        guard let latitude = latitude else {return}
+    ////    guard let longitude = longitude else {return}
+    ////    guard let latitude = latitude else {return}
         //        guard let gender = gender else {return}
-        let weatherURL = ConstructAPILink.constructWeatherLink(latitude: latitude, longitude: longitude)
-        let locationURL = ConstructAPILink.constructLocationLink(latitude: latitude, longitude: longitude)
+        let weatherURL = ConstructAPILink.constructWeatherLink(latitude: latitude!, longitude: longitude!)
+  ////      let locationURL = ConstructAPILink.constructLocationLink(latitude: latitude, longitude: longitude)
         
         WeatherService.getWeather(url: weatherURL) { (temp) in
             
@@ -50,8 +55,8 @@ import UIKit
         }
         
         
-        WeatherService.getLocation(url: locationURL) { (location) in
-            self.locationLabel.text = location
+    ////    WeatherService.getLocation(url: locationURL) { (location) in
+     ////       self.locationLabel.text = location
         }
     }
     
@@ -66,5 +71,13 @@ import UIKit
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return clothes.count
-}
-*/
+    }
+    
+    
+    
+ ////   @IBAction func newTripButtonPressed(_ sender: Any) {
+ ////       performSegue(withIdentifier: "unwindToStartTrip", sender: self)
+  ////  }
+    
+//// }
+ */

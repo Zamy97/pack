@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		255FCE00210BE0C500AF7350 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FCDFF210BE0C500AF7350 /* plus.png */; };
+		257010CF21180A6000F1DC95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257010CE21180A6000F1DC95 /* Constants.swift */; };
+		257010D121180B3D00F1DC95 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257010D021180B3D00F1DC95 /* WeatherService.swift */; };
+		257010D321180B7E00F1DC95 /* ConstructAPILink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257010D221180B7E00F1DC95 /* ConstructAPILink.swift */; };
+		257010D5211813AC00F1DC95 /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257010D4211813AC00F1DC95 /* ClothesTableViewCell.swift */; };
+		257010D7211814DA00F1DC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257010D6211814DA00F1DC95 /* HomeViewController.swift */; };
 		2594FC9D210BC8900090BB1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FC9C210BC8900090BB1F /* AppDelegate.swift */; };
 		2594FC9F210BC8900090BB1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FC9E210BC8900090BB1F /* ViewController.swift */; };
 		2594FCA2210BC8900090BB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA0210BC8900090BB1F /* Main.storyboard */; };
@@ -15,11 +20,9 @@
 		2594FCA7210BC8910090BB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA6210BC8910090BB1F /* Assets.xcassets */; };
 		2594FCAA210BC8910090BB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2594FCA8210BC8910090BB1F /* LaunchScreen.storyboard */; };
 		2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */; };
-		2599C2FD2116B6860044DE3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599C2FC2116B6860044DE3C /* HomeViewController.swift */; };
 		25B5605D21166FE3008A6F23 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */; };
-		25B5605F21166FFF008A6F23 /* gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605E21166FFF008A6F23 /* gender.swift */; };
+		25B5605F21166FFF008A6F23 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5605E21166FFF008A6F23 /* Gender.swift */; };
 		25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5606121167086008A6F23 /* ClothingModelLogic.swift */; };
-		25B5606821167159008A6F23 /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5606721167159008A6F23 /* ClothesTableViewCell.swift */; };
 		25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */; };
 		25EA617B2113B891000D9108 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617A2113B891000D9108 /* Weather.swift */; };
 		25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F042A12116487900A8C4A5 /* ThirdViewController.swift */; };
@@ -32,6 +35,11 @@
 /* Begin PBXFileReference section */
 		0A82FC13FF1AB61957005C17 /* Pods-PCK Sggtion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCK Sggtion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCK Sggtion/Pods-PCK Sggtion.debug.xcconfig"; sourceTree = "<group>"; };
 		255FCDFF210BE0C500AF7350 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = ../../plus.png; sourceTree = "<group>"; };
+		257010CE21180A6000F1DC95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		257010D021180B3D00F1DC95 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		257010D221180B7E00F1DC95 /* ConstructAPILink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructAPILink.swift; sourceTree = "<group>"; };
+		257010D4211813AC00F1DC95 /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
+		257010D6211814DA00F1DC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2594FC99210BC8900090BB1F /* PCK Sggtion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCK Sggtion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2594FC9C210BC8900090BB1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2594FC9E210BC8900090BB1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,12 +49,10 @@
 		2594FCA9210BC8910090BB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2594FCAB210BC8910090BB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
-		2599C2FC2116B6860044DE3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		25B5605E21166FFF008A6F23 /* gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gender.swift; sourceTree = "<group>"; };
+		25B5605E21166FFF008A6F23 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		25B5606121167086008A6F23 /* ClothingModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModelLogic.swift; sourceTree = "<group>"; };
 		25B560662116712D008A6F23 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
-		25B5606721167159008A6F23 /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
 		25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewTableViewController.swift; sourceTree = "<group>"; };
 		25EA617A2113B891000D9108 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		25F042A12116487900A8C4A5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257010CD21180A3300F1DC95 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				257010CE21180A6000F1DC95 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		2594FC90210BC8900090BB1F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				25F042A42116612000A8C4A5 /* Controllers */,
+				257010CD21180A3300F1DC95 /* Constants */,
 				25B5605721166E52008A6F23 /* Services */,
 				25B5605A21166EE5008A6F23 /* Helper */,
 				25B5606021167045008A6F23 /* Model */,
@@ -110,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				25EA617A2113B891000D9108 /* Weather.swift */,
+				257010D021180B3D00F1DC95 /* WeatherService.swift */,
+				257010D221180B7E00F1DC95 /* ConstructAPILink.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -118,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				25B5605C21166FE3008A6F23 /* CoreDataHelper.swift */,
-				25B5605E21166FFF008A6F23 /* gender.swift */,
+				25B5605E21166FFF008A6F23 /* Gender.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -145,7 +162,7 @@
 			children = (
 				25FEF7AF210D56AC00050699 /* DataCell.swift */,
 				25B560662116712D008A6F23 /* DateCell.xib */,
-				25B5606721167159008A6F23 /* ClothesTableViewCell.swift */,
+				257010D4211813AC00F1DC95 /* ClothesTableViewCell.swift */,
 			);
 			path = UsefulCells;
 			sourceTree = "<group>";
@@ -158,7 +175,7 @@
 				25FEF7AB210D374A00050699 /* CalendarViewController.swift */,
 				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
-				2599C2FC2116B6860044DE3C /* HomeViewController.swift */,
+				257010D6211814DA00F1DC95 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -321,16 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257010D121180B3D00F1DC95 /* WeatherService.swift in Sources */,
 				25B5605D21166FE3008A6F23 /* CoreDataHelper.swift in Sources */,
 				25EA617B2113B891000D9108 /* Weather.swift in Sources */,
+				257010D7211814DA00F1DC95 /* HomeViewController.swift in Sources */,
 				25B5606221167086008A6F23 /* ClothingModelLogic.swift in Sources */,
 				25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */,
+				257010D321180B7E00F1DC95 /* ConstructAPILink.swift in Sources */,
 				25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */,
-				2599C2FD2116B6860044DE3C /* HomeViewController.swift in Sources */,
+				257010CF21180A6000F1DC95 /* Constants.swift in Sources */,
 				25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */,
 				25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */,
-				25B5605F21166FFF008A6F23 /* gender.swift in Sources */,
-				25B5606821167159008A6F23 /* ClothesTableViewCell.swift in Sources */,
+				257010D5211813AC00F1DC95 /* ClothesTableViewCell.swift in Sources */,
+				25B5605F21166FFF008A6F23 /* Gender.swift in Sources */,
 				2594FC9F210BC8900090BB1F /* ViewController.swift in Sources */,
 				2594FC9D210BC8900090BB1F /* AppDelegate.swift in Sources */,
 				2594FCA5210BC8900090BB1F /* PCK_Sggtion.xcdatamodeld in Sources */,

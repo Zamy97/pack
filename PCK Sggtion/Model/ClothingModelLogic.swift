@@ -31,7 +31,7 @@ struct ClothingModelLogic{
             case -50...49:
                 return ["Long Sleeve Casual Shirts","Heavy Sweaters","Heavy Scarf","Winter Hat","Button Down Long Sleeve Shirt","Long Sleeve Pajama Shirt","Pajama Pants","Khaki Pants","Snow Pants", "Jeans", "Sweatpants","Sneakers","Snow Boots","Thick Socks","Jacket","Bulky Underwear","Gloves","Jacket","Sport Jacket","Dress Pants","Long Sleeve Dress Shirt"]
             default:
-                return ["Error retrieving Clothes"]
+                return ["Hi there, Couldn't get any suggestion! Please try one more time"]
                 
             }
         case .female:
@@ -52,7 +52,7 @@ struct ClothingModelLogic{
                 
             default:
                 print("This is the default")
-                return["default", "hey"]
+                return["hey there, please try one more time"]
             }
         case .none:
             print("None")

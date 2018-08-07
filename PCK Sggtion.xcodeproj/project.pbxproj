@@ -105,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				25F042A42116612000A8C4A5 /* Controllers */,
-				25DBA1522118B8EE0007D965 /* View Controller from Noah */,
 				257010CD21180A3300F1DC95 /* Constants */,
 				25B5605721166E52008A6F23 /* Services */,
 				25B5605A21166EE5008A6F23 /* Helper */,
@@ -166,13 +165,6 @@
 				25DBA15F211900260007D965 /* ClothesTableViewCell.swift */,
 			);
 			path = UsefulCells;
-			sourceTree = "<group>";
-		};
-		25DBA1522118B8EE0007D965 /* View Controller from Noah */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controller from Noah";
 			sourceTree = "<group>";
 		};
 		25F042A42116612000A8C4A5 /* Controllers */ = {

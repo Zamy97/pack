@@ -12,7 +12,7 @@ import GooglePlaces
 import GoogleMaps
 
 class SecondViewViewController: UIViewController {
-    
+
      var forecastData = [Weather]()
     
     @IBOutlet weak var inputTextField: UITextField!
@@ -31,13 +31,13 @@ class SecondViewViewController: UIViewController {
     
     var locationManager = CLLocationManager()
     
-    
+ 
     let txtFieldSearch: UITextField = {
         let tf=UITextField()
         tf.borderStyle = .roundedRect
         tf.backgroundColor = .white
         tf.layer.borderColor = UIColor.darkGray.cgColor
-        tf.placeholder="Search for a location"
+        tf.placeholder="Search for a place"
         tf.translatesAutoresizingMaskIntoConstraints=false
         return tf
         

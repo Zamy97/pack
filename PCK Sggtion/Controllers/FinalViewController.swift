@@ -9,6 +9,8 @@
 import UIKit
 
 class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     var recArray = [String]()
     
     var temperature: Double?
@@ -27,6 +29,7 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         WeatherService.location = location
         
         WeatherService.getLocation(location: location!) { (lat, long) in
@@ -35,7 +38,10 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let link = APILink.constructWeatherLink(latitude: long, longitude: lat)
             WeatherService.getWeather(url: link,completion: { (temp) in
                 print(temp)
-               self.recArray = ClothingModelLogic.getClothing(temp: temp, gender: self.gender)
+                
+                
+                
+    self.recArray = ClothingModelLogic.getClothing(temp: temp, gender: self.gender)
                 print(self.recArray)
              
                 
@@ -45,24 +51,20 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.tempLabel.text = String(roundedTemp) + "˚"
             })
         }
-        // Do any additional setup after loading the view.
         
-        temperatureLabel.text = location
+   //     temperatureLabel.text = location
         
-    //     temperature = tempLabel.text
-            
-        
-       
-        print(recArray)
+
+        print(self.recArray)
         self.tableView.reloadData()
     
     }
+  
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "clothesCell", for: indexPath) as! ClothesTableViewCell
-      //  guard let recArray = recArray else
-     //   {return cell}
+     
         let clothingItem = recArray[indexPath.row]
         cell.clothesLabel.text = clothingItem
         return cell
@@ -71,7 +73,7 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     //   guard let recArray = recArray else {return 0}
+    
       return recArray.count
     }
     

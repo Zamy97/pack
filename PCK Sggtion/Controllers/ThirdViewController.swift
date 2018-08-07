@@ -27,15 +27,53 @@ class ThirdViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     
+//    func hotelPressed(_ sender: UIButton) {
+//        
+//        // "button" is a property
+//        
+//        if hotelButton.isSelected {
+//            hostelButton.setImage(UIImage(named: "Hostel2"), for: .normal)
+//            hostelButton.isSelected = false
+//        }else {
+//            hostelButton.setImage(UIImage(named: "Hostel1"), for: .selected)
+//            hostelButton.isSelected = true
+//        }
+//    }
+    
+    
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
-        hotelButton.backgroundColor = UIColor.blue
+        
+        if hotelButton.isSelected {
+            hotelButton.setImage(UIImage(named: "Hotel1"), for: .normal)
+            hotelButton.isSelected = false
+        }else {
+            hotelButton.setImage(UIImage(named: "Hotel2"), for: .selected)
+            hotelButton.isSelected = true
+        }
+  
         
     }
     
     @IBAction func airbnbButtonPressed(_ sender: Any) {
+        
+        if airbnbButton.isSelected {
+            airbnbButton.setImage(UIImage(named: "Airbnb1"), for: .normal)
+            airbnbButton.isSelected = false
+        }else {
+            airbnbButton.setImage(UIImage(named: "Airbnb2"), for: .selected)
+            airbnbButton.isSelected = true
+        }
     }
     
     @IBAction func hostelButtonPressed(_ sender: UIButton) {
+        
+        if hostelButton.isSelected {
+            hostelButton.setImage(UIImage(named: "Hostel1"), for: .normal)
+            hostelButton.isSelected = false
+        }else {
+            hostelButton.setImage(UIImage(named: "Hostel2"), for: .selected)
+            hostelButton.isSelected = true
+        }
     }
     
     

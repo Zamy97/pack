@@ -176,6 +176,9 @@
                                 <color key="backgroundColor" red="0.15321370548650909" green="0.12357104119434166" blue="0.34731217616580312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Airbnb"/>
+                                <connections>
+                                    <action selector="airbnbButtonPressed:" destination="jzR-Mt-D45" eventType="touchUpInside" id="It7-XN-mOr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7R-Mx-zBT">
                                 <rect key="frame" x="287" y="141" width="72" height="103"/>
@@ -183,6 +186,9 @@
                                 <color key="backgroundColor" red="0.34731217616580312" green="0.10747166133649266" blue="0.19964838001437094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Hostel"/>
+                                <connections>
+                                    <action selector="hostelButtonPressed:" destination="jzR-Mt-D45" eventType="touchUpInside" id="ilT-Qa-BcW"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="JnI-Vx-7sS">
                                 <rect key="frame" x="16" y="319" width="343" height="29"/>
@@ -201,19 +207,24 @@
                                     <segue destination="vMt-jr-JC3" kind="show" id="NYu-ic-gt8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-8W-zYy">
-                                <rect key="frame" x="16" y="141" width="80" height="103"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-8W-zYy">
+                                <rect key="frame" x="28" y="151" width="65" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.088725544392449771" green="0.15013762953367871" blue="0.032121993599804347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Hotel"/>
+                                <color key="backgroundColor" red="0.23938340435276753" green="0.96478303108808294" blue="0.95964807114688078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="icons8-bed"/>
+                                <connections>
+                                    <action selector="hotelButtonPressed:" destination="jzR-Mt-D45" eventType="touchUpInside" id="2vh-EG-Koc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JpU-FL-oCd"/>
                     </view>
                     <connections>
+                        <outlet property="airbnbButton" destination="Byh-oA-ZTI" id="1Cw-1A-rGS"/>
                         <outlet property="genderSegmented" destination="JnI-Vx-7sS" id="gRl-n2-KUj"/>
+                        <outlet property="hostelButton" destination="C7R-Mx-zBT" id="pg8-eX-p2Y"/>
+                        <outlet property="hotelButton" destination="hNq-8W-zYy" id="xiZ-gK-0gq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdu-vy-Y9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,6 +478,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-bed" width="32" height="32"/>
         <image name="plus.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>

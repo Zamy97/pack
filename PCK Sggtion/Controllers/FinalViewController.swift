@@ -11,7 +11,11 @@ import UIKit
 class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    var recArray = [String]()
+    var recArray = [String](){
+        didSet{
+            tableView.reloadData()
+        }
+    }
     
     var temperature: Double?
         
@@ -56,8 +60,19 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
 
         print(self.recArray)
-        self.tableView.reloadData()
+       // self.tableView.reloadData()
     
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "takeLocation":
+            let destination = segue.destination as? WeatherViewTableViewController
+            destination?.location = location!
+       
+        default:
+            break
+        }
     }
   
     

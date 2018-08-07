@@ -12,6 +12,12 @@ class ThirdViewController: ViewController {
     
     var gender: Gender?
   
+    @IBOutlet weak var hotelButton: UIButton!
+    
+    @IBOutlet weak var airbnbButton: UIButton!
+    
+    @IBOutlet weak var hostelButton: UIButton!
+    
     @IBOutlet weak var genderSegmented: UISegmentedControl!
     
     
@@ -20,6 +26,18 @@ class ThirdViewController: ViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func hotelButtonPressed(_ sender: UIButton) {
+        hotelButton.backgroundColor = UIColor.blue
+        
+    }
+    
+    @IBAction func airbnbButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func hostelButtonPressed(_ sender: UIButton) {
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let FinalViewController = segue.destination as? FinalViewController else{return}

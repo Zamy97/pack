@@ -421,10 +421,13 @@
                                 <state key="normal" title="SightSeeing"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBm-1B-xIi">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="rz2-FH-x4r" kind="show" id="AKv-C2-Gea"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hch-62-S62">
                                 <rect key="frame" x="16" y="452" width="127" height="80"/>
@@ -495,5 +498,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="B3V-Q3-Htn"/>
+        <segue reference="AKv-C2-Gea"/>
     </inferredMetricsTieBreakers>
 </document>

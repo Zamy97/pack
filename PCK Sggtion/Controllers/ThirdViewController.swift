@@ -9,9 +9,9 @@
  import UIKit
 
 class ThirdViewController: ViewController {
-
-  
     
+    var gender: Gender?
+  
     @IBOutlet weak var genderSegmented: UISegmentedControl!
     
     
@@ -19,6 +19,18 @@ class ThirdViewController: ViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let FinalViewController = segue.destination as? FinalViewController else{return}
+        
+        if(genderSegmented.selectedSegmentIndex == 0){
+            FinalViewController.gender = .male
+        }
+        else{
+            FinalViewController.gender = .female
+        }
+        
     }
 
    }

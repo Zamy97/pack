@@ -35,7 +35,7 @@ struct WeatherService {
                         
                     }
                     print(tempsArray)
-                    let sum =  tempsArray.reduce(0,+)
+                    let sum = tempsArray.reduce(0,+)
                     let average = sum/Double(tempsArray.count)
                     completion(average)
                     

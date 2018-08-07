@@ -21,6 +21,8 @@
 		25DBA1582118C17B0007D965 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBA1572118C17B0007D965 /* WeatherService.swift */; };
 		25DBA15A2118C4B00007D965 /* APILink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBA1592118C4B00007D965 /* APILink.swift */; };
 		25DBA15C2118C56B0007D965 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBA15B2118C56B0007D965 /* FinalViewController.swift */; };
+		25DBA15E2118FF030007D965 /* ClothingModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBA15D2118FF030007D965 /* ClothingModelLogic.swift */; };
+		25DBA160211900260007D965 /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBA15F211900260007D965 /* ClothesTableViewCell.swift */; };
 		25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */; };
 		25EA617B2113B891000D9108 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA617A2113B891000D9108 /* Weather.swift */; };
 		25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F042A12116487900A8C4A5 /* ThirdViewController.swift */; };
@@ -49,6 +51,8 @@
 		25DBA1572118C17B0007D965 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		25DBA1592118C4B00007D965 /* APILink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILink.swift; sourceTree = "<group>"; };
 		25DBA15B2118C56B0007D965 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		25DBA15D2118FF030007D965 /* ClothingModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModelLogic.swift; sourceTree = "<group>"; };
+		25DBA15F211900260007D965 /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
 		25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewTableViewController.swift; sourceTree = "<group>"; };
 		25EA617A2113B891000D9108 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		25F042A12116487900A8C4A5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		25B5606021167045008A6F23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25DBA15D2118FF030007D965 /* ClothingModelLogic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			children = (
 				25FEF7AF210D56AC00050699 /* DataCell.swift */,
 				25B560662116712D008A6F23 /* DateCell.xib */,
+				25DBA15F211900260007D965 /* ClothesTableViewCell.swift */,
 			);
 			path = UsefulCells;
 			sourceTree = "<group>";
@@ -175,8 +181,8 @@
 				2594FC9E210BC8900090BB1F /* ViewController.swift */,
 				2594FCB1210BCA0D0090BB1F /* SecondViewViewController.swift */,
 				25FEF7AB210D374A00050699 /* CalendarViewController.swift */,
-				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
+				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 				25DBA15B2118C56B0007D965 /* FinalViewController.swift */,
 			);
 			path = Controllers;
@@ -346,12 +352,14 @@
 				25EA617B2113B891000D9108 /* Weather.swift in Sources */,
 				25F042A22116487900A8C4A5 /* ThirdViewController.swift in Sources */,
 				25FEF7AC210D374A00050699 /* CalendarViewController.swift in Sources */,
+				25DBA160211900260007D965 /* ClothesTableViewCell.swift in Sources */,
 				25EA617721138BFE000D9108 /* WeatherViewTableViewController.swift in Sources */,
 				25FEF7B0210D56AC00050699 /* DataCell.swift in Sources */,
 				25B5605F21166FFF008A6F23 /* Gender.swift in Sources */,
 				2594FC9F210BC8900090BB1F /* ViewController.swift in Sources */,
 				2594FC9D210BC8900090BB1F /* AppDelegate.swift in Sources */,
 				2594FCA5210BC8900090BB1F /* PCK_Sggtion.xcdatamodeld in Sources */,
+				25DBA15E2118FF030007D965 /* ClothingModelLogic.swift in Sources */,
 				25DBA15C2118C56B0007D965 /* FinalViewController.swift in Sources */,
 				25DBA15A2118C4B00007D965 /* APILink.swift in Sources */,
 				2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */,

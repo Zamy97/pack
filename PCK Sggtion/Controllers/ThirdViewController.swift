@@ -11,7 +11,8 @@
 class ThirdViewController: ViewController {
     
     var gender: Gender?
-  
+    @IBOutlet weak var thirdViewQuestion: UILabel!
+    
     @IBOutlet weak var hotelButton: UIButton!
     
     @IBOutlet weak var airbnbButton: UIButton!
@@ -25,6 +26,9 @@ class ThirdViewController: ViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        thirdViewQuestion.adjustsFontSizeToFitWidth = true
+        thirdViewQuestion.minimumScaleFactor = 0.2
+        
     }
     
 //    func hotelPressed(_ sender: UIButton) {

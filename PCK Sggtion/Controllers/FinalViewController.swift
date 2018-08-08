@@ -34,6 +34,9 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        temperatureLabel.adjustsFontSizeToFitWidth = true
+       temperatureLabel.minimumScaleFactor = 0.2
+        
         WeatherService.location = location
         
         WeatherService.getLocation(location: location!) { (lat, long) in

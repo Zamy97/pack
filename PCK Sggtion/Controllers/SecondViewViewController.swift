@@ -15,6 +15,8 @@ class SecondViewViewController: UIViewController {
 
      var forecastData = [Weather]()
     
+    @IBOutlet weak var secondQuestionLabel: UILabel!
+    @IBOutlet weak var firstQuestionLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputTextField: UITextField!
     
@@ -46,6 +48,13 @@ class SecondViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        firstQuestionLabel.adjustsFontSizeToFitWidth = true
+        firstQuestionLabel.minimumScaleFactor = 0.2
+        
+        secondQuestionLabel.adjustsFontSizeToFitWidth = true
+        secondQuestionLabel.minimumScaleFactor = 0.2
+        
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()

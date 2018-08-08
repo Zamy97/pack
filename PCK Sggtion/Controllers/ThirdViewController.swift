@@ -10,6 +10,8 @@
 
 class ThirdViewController: ViewController {
     
+    @IBAction func nextButton(_ sender: UIButton) {
+    }
     var gender: Gender?
     @IBOutlet weak var thirdViewQuestion: UILabel!
     
@@ -31,20 +33,7 @@ class ThirdViewController: ViewController {
         
     }
     
-//    func hotelPressed(_ sender: UIButton) {
-//        
-//        // "button" is a property
-//        
-//        if hotelButton.isSelected {
-//            hostelButton.setImage(UIImage(named: "Hostel2"), for: .normal)
-//            hostelButton.isSelected = false
-//        }else {
-//            hostelButton.setImage(UIImage(named: "Hostel1"), for: .selected)
-//            hostelButton.isSelected = true
-//        }
-//    }
-    
-    
+ 
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
         
         if hotelButton.isSelected {

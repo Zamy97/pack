@@ -110,11 +110,10 @@ class SecondViewViewController: UIViewController {
         inputTextField.text = dateFormatter1.string(from: datePicker1.date)
         outputTextField.text = dateFormatter2.string(from: datePicker2.date)
         
-        let timeOffset = datePicker2.date.days(from: datePicker1.date)
+        var timeOffset = datePicker2.date.days(from: datePicker1.date)
         // update the label
-        self.finalLabel.text = String(timeOffset)
-        print(timeOffset)
-   
+        timeOffset = timeOffset <= 0 ? 1 : timeOffset
+        self.finalLabel.text = timeOffset != 1 ? "\(timeOffset) Days" : "\(timeOffset) Day"   
     }
     
     func updateDateField(sender: UIDatePicker) {
@@ -194,7 +193,7 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     func setupViews() {
         
         self.view.addSubview(txtFieldSearch)
-        txtFieldSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive=true
+        txtFieldSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive=true
         txtFieldSearch.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive=true
         txtFieldSearch.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive=true
         txtFieldSearch.heightAnchor.constraint(equalToConstant: 35).isActive=true

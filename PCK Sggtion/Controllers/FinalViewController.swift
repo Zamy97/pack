@@ -59,7 +59,7 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
             })
         }
         
-   //     temperatureLabel.text = location
+             temperatureLabel.text = location
         
 
         print(self.recArray)

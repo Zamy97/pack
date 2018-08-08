@@ -32,7 +32,6 @@ class SecondViewViewController: UIViewController {
     let dateFormatter2 = DateFormatter()
     
     var locationManager = CLLocationManager()
-    
  
     let txtFieldSearch: UITextField = {
         let tf=UITextField()

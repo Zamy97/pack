@@ -146,7 +146,7 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
      txtFieldSearch.text = place.formattedAddress
         
         // Next line print the location using google places
-     //   locationPrintLabel.text = place.formattedAddress
+        locationPrintLabel.text = place.formattedAddress
         
         
         // dismiss after place selected

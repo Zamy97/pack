@@ -60,7 +60,7 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
 
         print(self.recArray)
-       // self.tableView.reloadData()
+        self.tableView.reloadData()
     
     }
     
@@ -93,6 +93,5 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
-   
 
 }

@@ -121,10 +121,7 @@ class SecondViewViewController: UIViewController {
         }
         
     }
-    
-
-
-    
+  
 }
 
 extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate, UITextFieldDelegate {
@@ -149,7 +146,7 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
      txtFieldSearch.text = place.formattedAddress
         
         // Next line print the location using google places
-        locationPrintLabel.text = place.formattedAddress
+     //   locationPrintLabel.text = place.formattedAddress
         
         
         // dismiss after place selected
@@ -188,7 +185,7 @@ extension SecondViewViewController: CLLocationManagerDelegate, GMSMapViewDelegat
     func setupViews() {
         
         self.view.addSubview(txtFieldSearch)
-        txtFieldSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive=true
+        txtFieldSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive=true
         txtFieldSearch.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive=true
         txtFieldSearch.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive=true
         txtFieldSearch.heightAnchor.constraint(equalToConstant: 35).isActive=true
@@ -205,6 +202,8 @@ extension Date {
     func days(from date: Date) -> Int {
         return Calendar.current.dateComponents([.day], from: date, to: self).day ?? 0
     }
+    
+   
  
     
 }

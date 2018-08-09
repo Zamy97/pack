@@ -53,6 +53,11 @@ class SecondViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        txtFieldSearch.text = ""
+        inputTextField.text = ""
+        outputTextField.text = ""
+
+        
         firstQuestionLabel.adjustsFontSizeToFitWidth = true
         firstQuestionLabel.minimumScaleFactor = 0.2
         
@@ -87,8 +92,14 @@ class SecondViewViewController: UIViewController {
         dateFormatter1.dateFormat = "MMMM dd, yyyy"
         inputTextField.text = dateFormatter1.string(from: Date())
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(inputTextField.text == "" || outputTextField.text == "" || txtFieldSearch.text == ""){
+            let alert = UIAlertController(title: "Information Missing", message: "Please make sure to fill out all the fields to begin packing", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
         
         if segue.identifier == "foodLocation" {
             let destination = segue.destination as? FoodViewController
@@ -110,6 +121,10 @@ class SecondViewViewController: UIViewController {
         }
     }
     
+//    func textFieldDidBeginEditing(textField: UITextField) {
+//
+//    }
+//
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
      view.endEditing(true)
         

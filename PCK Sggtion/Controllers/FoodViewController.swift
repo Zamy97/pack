@@ -22,14 +22,14 @@ class FoodViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let trimmedLocation = self.location.trimmingCharacters(in: .whitespaces)
-        let url = URL(string: "https://www.yelp.com/search?find_loc=\(trimmedLocation)")
+    //    let trimmedLocation = self.location.trimmingCharacters(in: .whitespaces)
+        let url = URL(string: "https://www.yelp.com/search?find_loc=Berkeley")
 
         
 //      guard let url = URL(string:"https://www.yelp.com/search?find_loc=\(self.location)") else{return}
     
         
-        let request = URLRequest(url: url!)
+        let request = URLRequest(url: (url)!)
 
         foodView.load(request)
         

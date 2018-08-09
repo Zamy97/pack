@@ -27,6 +27,8 @@ class ThirdViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden = false
+        
         // Do any additional setup after loading the view.
         thirdViewQuestion.adjustsFontSizeToFitWidth = true
         thirdViewQuestion.minimumScaleFactor = 0.2

@@ -11,13 +11,10 @@ import GoogleMaps
 import GooglePlaces
 
 class ViewController: UIViewController {
-    
-    
-    
-
  
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   navigationController?.isNavigationBarHidden = true
     }
   
 }

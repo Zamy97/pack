@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252B1FD2211B8AFC00AACAED /* ErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B1FD1211B8AFC00AACAED /* ErrorController.swift */; };
 		252B1FD4211B9B5A00AACAED /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B1FD3211B9B5A00AACAED /* FoodViewController.swift */; };
 		252B1FD6211B9B6B00AACAED /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B1FD5211B9B6B00AACAED /* FlightsViewController.swift */; };
 		255FCE00210BE0C500AF7350 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FCDFF210BE0C500AF7350 /* plus.png */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		0A82FC13FF1AB61957005C17 /* Pods-PCK Sggtion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCK Sggtion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCK Sggtion/Pods-PCK Sggtion.debug.xcconfig"; sourceTree = "<group>"; };
-		252B1FD1211B8AFC00AACAED /* ErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorController.swift; sourceTree = "<group>"; };
 		252B1FD3211B9B5A00AACAED /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		252B1FD5211B9B6B00AACAED /* FlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
 		255FCDFF210BE0C500AF7350 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = ../../plus.png; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				25EA617621138BFE000D9108 /* WeatherViewTableViewController.swift */,
 				25F042A12116487900A8C4A5 /* ThirdViewController.swift */,
 				25DBA15B2118C56B0007D965 /* FinalViewController.swift */,
-				252B1FD1211B8AFC00AACAED /* ErrorController.swift */,
 				252B1FD3211B9B5A00AACAED /* FoodViewController.swift */,
 				252B1FD5211B9B6B00AACAED /* FlightsViewController.swift */,
 			);
@@ -364,7 +361,6 @@
 				25DBA15C2118C56B0007D965 /* FinalViewController.swift in Sources */,
 				252B1FD4211B9B5A00AACAED /* FoodViewController.swift in Sources */,
 				25DBA15A2118C4B00007D965 /* APILink.swift in Sources */,
-				252B1FD2211B8AFC00AACAED /* ErrorController.swift in Sources */,
 				2594FCB2210BCA0D0090BB1F /* SecondViewViewController.swift in Sources */,
 				25DBA1562118C13B0007D965 /* Constants.swift in Sources */,
 				252B1FD6211B9B6B00AACAED /* FlightsViewController.swift in Sources */,

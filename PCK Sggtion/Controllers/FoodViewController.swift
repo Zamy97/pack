@@ -12,6 +12,9 @@ import WebKit
 
 class FoodViewController: UIViewController {
     
+    var location = String()
+
+    
     
     @IBOutlet weak var foodView: WKWebView!
 
@@ -19,10 +22,15 @@ class FoodViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = URL(string: "https://www.yelp.com/")
+        let trimmedLocation = self.location.trimmingCharacters(in: .whitespaces)
+        let url = URL(string: "https://www.yelp.com/search?find_loc=\(trimmedLocation)")
+
+        
+//      guard let url = URL(string:"https://www.yelp.com/search?find_loc=\(self.location)") else{return}
+    
         
         let request = URLRequest(url: url!)
-        
+
         foodView.load(request)
         
         

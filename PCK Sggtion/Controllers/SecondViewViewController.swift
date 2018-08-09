@@ -15,6 +15,7 @@ class SecondViewViewController: UIViewController {
 
      var forecastData = [Weather]()
     
+    
     @IBOutlet weak var secondQuestionLabel: UILabel!
     @IBOutlet weak var firstQuestionLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
@@ -24,6 +25,10 @@ class SecondViewViewController: UIViewController {
     
     @IBOutlet weak var locationPrintLabel: UILabel!
     
+    
+    @IBAction func untindToSecondViewController(_ sender: UIStoryboardSegue) {
+        
+    }
  
     private var datePicker1 = UIDatePicker()
     private var datePicker2 = UIDatePicker()
@@ -79,16 +84,27 @@ class SecondViewViewController: UIViewController {
         inputTextField.inputView = datePicker1
         outputTextField.inputView = datePicker2
         
-  
+        dateFormatter1.dateFormat = "MMMM dd, yyyy"
+        inputTextField.text = dateFormatter1.string(from: Date())
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "foodLocation" {
+            let destination = segue.destination as? FoodViewController
+            destination?.location = txtFieldSearch.text!
+            
+        }
+        
         switch segue.identifier {
         case "weatherSegue":
             let destination = segue.destination as? WeatherViewTableViewController
             destination?.location = txtFieldSearch.text!
         case "locationSegue":
             WeatherService.location = locationPrintLabel.text
+
+ 
+            
         default:
             break
         }
@@ -209,6 +225,8 @@ extension Date {
     func days(from date: Date) -> Int {
         return Calendar.current.dateComponents([.day], from: date, to: self).day ?? 0
     }
+    
+    
     
    
  

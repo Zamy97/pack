@@ -69,16 +69,38 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     }
     
+    @IBAction func yelpButtonTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "foodLocation", sender: self)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "takeLocation":
             let destination = segue.destination as? WeatherViewTableViewController
             destination?.location = location!
-       
+            
+//            if segue.identifier == "foodLocation"{
+//                let destination = segue.destination as? FoodViewController
+//                destination?.location = temperatureLabel.text!
+            
+        case "foodLocation":
+            let destination = segue.destination as? FoodViewController
+            destination?.location = location!
+            
         default:
             break
+            
+//
+            }
+       
+     
+                
+
+            
         }
-    }
+
   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -97,6 +119,7 @@ class FinalViewController: UIViewController, UITableViewDelegate, UITableViewDat
       return recArray.count
     }
     
+
 
 
 }

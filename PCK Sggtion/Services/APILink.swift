@@ -11,7 +11,7 @@ import Foundation
 struct APILink {
     
     static func constructWeatherLink(latitude: Double , longitude: Double) -> String {
-        let weatherLink = "https://api.darksky.net/forecast/41ccc57fb3966d63f1789ab194a89cf6/\(latitude),\(longitude),2018-07-22T06:24:15?exclude=currently,flags"
+        let weatherLink = "https://api.darksky.net/forecast/Get your Api Key/\(latitude),\(longitude),2018-07-22T06:24:15?exclude=currently,flags"
         
         return weatherLink
 }
